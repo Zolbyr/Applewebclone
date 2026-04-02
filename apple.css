@@ -871,7 +871,7 @@ body {
   align-items: center;
 }
 
-/* ===== TABLET (max-width: 1024px) ===== */
+
 @media (max-width: 1024px) {
   .applebothead {
     left: 50%;
@@ -904,7 +904,7 @@ body {
   }
 }
 
-/* ===== MOBILE (max-width: 768px) ===== */
+
 @media (max-width: 768px) {
   /* Second header */
   .applesecondheader {
@@ -915,7 +915,6 @@ body {
     padding: 8px 12px;
   }
 
-  /* Body hero sections */
   .applebody {
     height: auto;
     min-height: 400px;
@@ -932,7 +931,6 @@ body {
     font-size: 16px;
   }
 
-  /* Third body (Gift magic) */
   .applethirdbody img {
     height: 400px;
   }
@@ -941,7 +939,6 @@ body {
     height: 400px;
   }
 
-  /* Bottom product grid — single column */
   .applebottom {
     grid-template-columns: 1fr;
   }
@@ -968,7 +965,6 @@ body {
     width: 100%;
   }
 
-  /* Mac/iPad/Watch section headers — center them */
   .applebothead {
     left: 50%;
     transform: translateX(-50%);
@@ -1007,7 +1003,6 @@ body {
     text-align: center;
   }
 
-  /* AirPods card */
   .applebottom2bott {
     width: 90%;
     max-width: 405px;
@@ -1022,7 +1017,6 @@ body {
     font-size: 16px;
   }
 
-  /* Movies scroll section */
   .applemovies > div {
     width: 90vw;
     height: 400px;
@@ -1039,7 +1033,6 @@ body {
     font-size: 14px;
   }
 
-  /* Slider dots */
   .slider {
     left: 50%;
     transform: translateX(-50%);
@@ -1055,7 +1048,6 @@ body {
   }
 }
 
-/* ===== SMALL MOBILE (max-width: 480px) ===== */
 @media (max-width: 480px) {
   .appleheader {
     gap: 0;
