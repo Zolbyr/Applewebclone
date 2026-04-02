@@ -1,6 +1,18 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "Helvetica Neue", Arial, sans-serif;
+  color: #1d1d1f;
+  overflow-x: hidden;
 }
 
 .appleheader {
@@ -10,13 +22,40 @@
   justify-content: center;
   align-items: center;
   gap: 25px;
-  background-color: #f5f5f7cc;
+  background-color: rgba(245, 245, 247, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.appleheader p {
+  font-size: 13px;
+  color: #1d1d1f;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.appleheader p:hover {
+  opacity: 0.6;
 }
 
 .appleheader img {
   height: 50px;
   width: 35px;
   margin-top: 10px;
+  cursor: pointer;
+}
+
+.appleimage img {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.appleimage img:hover {
+  opacity: 0.6;
 }
 
 .applesecondheader {
@@ -66,7 +105,13 @@
 
 @media (max-width: 768px) {
   .appleheader {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    gap: 0;
+  }
+  .appleheader p {
+    display: none;
   }
   .apple16pro {
     display: none;
@@ -104,6 +149,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #fff;
+}
+
+.applebodysecondhead h1:hover {
+  background-color: #0077ed;
 }
 
 .applebodysecondhead h2 {
@@ -116,6 +168,13 @@
   align-items: center;
   font-size: 15px;
   color: #2997ff;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.applebodysecondhead h2:hover {
+  background-color: #2997ff;
+  color: #fff;
 }
 
 .applethirdbody img {
@@ -125,6 +184,7 @@
 
 .applethirdbody {
   display: flex;
+  position: relative;
 }
 
 .applethirdbody1 {
@@ -148,6 +208,12 @@
   align-items: center;
   color: #ffffff;
   margin-bottom: 60px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.applethirdbody2 p:hover {
+  background-color: #0077ed;
 }
 
 .applebottom1 {
@@ -155,6 +221,9 @@
   width: 100%;
   height: 580px;
   background-image: url(applebot.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
 }
 .applebothead {
@@ -191,6 +260,14 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.head1:hover {
+  background-color: #0077ed;
 }
 
 .head2 {
@@ -201,6 +278,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #2997ff;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.head2:hover {
+  background-color: #2997ff;
+  color: #fff;
 }
 
 .bottomfont {
@@ -224,6 +310,9 @@
 
 .applebottom2 {
   background-image: url(figure12.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #f5f5f7;
   display: flex;
   height: 580px;
@@ -270,6 +359,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.applebottom2bot1 h1:hover {
+  background-color: #0077ed;
 }
 
 .applebottom2bot1 h2 {
@@ -282,10 +378,20 @@
   align-items: center;
   font-size: 15px;
   color: #2997ff;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.applebottom2bot1 h2:hover {
+  background-color: #2997ff;
+  color: #fff;
 }
 
 .applebottom3 {
   background-image: url(figure3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   position: relative;
 }
@@ -353,6 +459,12 @@
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.applebottom32bot1 h1:hover {
+  background-color: #0077ed;
 }
 
 .applebottom32bot1 h2 {
@@ -364,10 +476,20 @@
   justify-content: center;
   align-items: center;
   color: #2997ff;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.applebottom32bot1 h2:hover {
+  background-color: #2997ff;
+  color: #fff;
 }
 
 .applebottom4 {
   background-image: url(figure5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 580px;
 }
@@ -403,6 +525,7 @@
   width: 100%;
   height: 580px;
   display: flex;
+  position: relative;
 }
 
 .applebottom52 {
@@ -411,7 +534,7 @@
   top: 58px;
   left: 310px;
   gap: 16px;
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
 }
@@ -456,10 +579,19 @@
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.applebottom52bot1 h1:hover {
+  background-color: #0077ed;
 }
 
 .applebottom6 {
   background-image: url(figure7.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 580px;
   width: 100%;
 }
@@ -514,6 +646,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.applebottom6bot1 h1:hover {
+  background-color: #0077ed;
 }
 
 .applebottom6bot1 h2 {
@@ -526,10 +665,18 @@
   align-items: center;
   font-size: 15px;
   color: #2997ff;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.applebottom6bot1 h2:hover {
+  background-color: #2997ff;
+  color: #fff;
 }
 .applemovies-container {
   width: 100vw;
-  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .applemovies {
   gap: 16px;
@@ -540,25 +687,31 @@
 .applemovies1 {
   display: flex;
   position: absolute;
-  margin-top: 600px;
-  margin-left: 100px;
+  bottom: 60px;
+  left: 60px;
   cursor: pointer;
+  align-items: center;
+  gap: 16px;
 }
 
 .applemovies1 h1 {
   height: 44px;
   width: 133px;
-  background-color: #f5f5f7;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 999px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 17px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.applemovies1:hover h1 {
+  background-color: #fff;
+  transform: scale(1.04);
 }
 
 .applemovies1 p {
-  margin-top: 10px;
-  margin-left: 50px;
   color: #ffffff;
   font-size: 17px;
 }
@@ -716,4 +869,249 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ===== TABLET (max-width: 1024px) ===== */
+@media (max-width: 1024px) {
+  .applebothead {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .applebottom32 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .applebottom52 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .applebothead4 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .bottomfont {
+    width: 100%;
+  }
+}
+
+/* ===== MOBILE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  /* Second header */
+  .applesecondheader {
+    font-size: 12px;
+    padding: 0 10px;
+    text-align: center;
+    height: auto;
+    padding: 8px 12px;
+  }
+
+  /* Body hero sections */
+  .applebody {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .applebody img {
+    height: 400px;
+  }
+
+  .applebodyhead {
+    width: 90%;
+    max-width: 405px;
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  /* Third body (Gift magic) */
+  .applethirdbody img {
+    height: 400px;
+  }
+
+  .applethirdbody1 {
+    height: 400px;
+  }
+
+  /* Bottom product grid — single column */
+  .applebottom {
+    grid-template-columns: 1fr;
+  }
+
+  .applebottom1,
+  .applebottom2,
+  .applebottom3,
+  .applebottom4,
+  .applebottom5,
+  .applebottom6 {
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .applebottom31,
+  .applebottom41,
+  .applebottom51 {
+    height: 420px;
+  }
+
+  .bottomfont {
+    height: 420px;
+    width: 100%;
+  }
+
+  /* Mac/iPad/Watch section headers — center them */
+  .applebothead {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .applebothead img {
+    width: 90%;
+    height: auto;
+  }
+
+  .applebottom32 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    top: 30px;
+  }
+
+  .applebottom52 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    top: 30px;
+    position: absolute;
+  }
+
+  .applebothead4 {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* AirPods card */
+  .applebottom2bott {
+    width: 90%;
+    max-width: 405px;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  /* Apple Card */
+  .applebottom6bott {
+    width: 90%;
+    max-width: 405px;
+    font-size: 16px;
+  }
+
+  /* Movies scroll section */
+  .applemovies > div {
+    width: 90vw;
+    height: 400px;
+  }
+
+  .applemovies1 {
+    bottom: 30px;
+    left: 16px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .applemovies1 p {
+    font-size: 14px;
+  }
+
+  /* Slider dots */
+  .slider {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Sliding banner */
+  .slidermovies {
+    height: 180px;
+  }
+
+  .slidermovies1 {
+    height: 160px;
+  }
+}
+
+/* ===== SMALL MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+  .appleheader {
+    gap: 0;
+    padding: 0 12px;
+  }
+
+  .applebodyhead {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .applebodysecondhead h1 {
+    width: 100px;
+    font-size: 13px;
+  }
+
+  .applebodysecondhead h2 {
+    width: 58px;
+    font-size: 13px;
+  }
+
+  .applebody {
+    min-height: 320px;
+  }
+
+  .applebody img {
+    height: 320px;
+  }
+
+  .applethirdbody img {
+    height: 320px;
+  }
+
+  .applethirdbody1 {
+    height: 320px;
+  }
+
+  .applebottom1,
+  .applebottom2,
+  .applebottom3,
+  .applebottom4,
+  .applebottom5,
+  .applebottom6 {
+    height: 360px;
+  }
+
+  .bottomfont {
+    height: 360px;
+  }
+
+  .applemovies > div {
+    width: 95vw;
+    height: 300px;
+  }
+
+  .applemovies1 {
+    margin-top: 220px;
+  }
 }
